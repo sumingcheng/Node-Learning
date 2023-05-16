@@ -1,0 +1,10 @@
+const os = require('os')
+
+console.log('CPU 架构:', os.arch())
+console.log('操作系统空闲内存-自由内存:', (os.freemem() / (1024 * 1024 * 1024)).toFixed(2) + 'GB')
+console.log('主机名:', os.hostname())
+console.log('操作系统平台:', os.platform())
+console.log('总内存:', (os.totalmem() / (1024 * 1024 * 1024)).toFixed(2) + 'GB')
+console.log('操作系统类型:', os.type())
+console.log('计算机的正常运行时间:', os.uptime() / 3600 + '小时')
+console.log('当前用户:', os.userInfo())
