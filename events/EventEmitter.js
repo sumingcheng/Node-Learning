@@ -17,6 +17,8 @@ class Order extends EventEmitter {
   completeOrder() {
     console.log('一个订单已完成')
     this.completedOrders ++
+    // 当调用 EventEmitter 的 emit() 方法发出事件时，Node.js 不会立即执行监听器函数,
+    // 而是异步地在事件循环的下一次迭代中执行监听器函数。这意味着在事件发生时，有机会在不中断应用程序的情况下异步处理事件。
     this.emit('orderCompleted', this.completedOrders)
   }
 }
