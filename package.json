@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/sumingcheng/Node-Learning#readme",
   "dependencies": {
-    "archiver": "^5.3.1"
+    "archiver": "^5.3.1",
+    "ora": "^6.3.1"
   }
 }
